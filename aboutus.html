@@ -16,7 +16,26 @@
 </head>
 
 <body>
-
+ <nav class="navbar navbar-dark navbar-expand-sm fixed-top"><!--adds a dark color navbar that will go 
+        vertical on small screens, has the color of the primary set in the project's Bootstrap, and fixes the nav bar
+        to the top of the page -->
+        <div class="container"> <!--setting the navbar in container class will keep it same length as the page content. Not setting it here
+        will make sure the navbar is always full page width-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span><!--This span and the button above add the collapsable menu button option-->
+            </button>
+            <a class="navbar-brand mr-auto" href="./index.html">Ristorante Con Fusion</a><!--navbar-brand allows this link to be a brand name 
+                and normally alerts users to use as a home page button.-->
+                <div class="collapse navbar-collapse" id="Navbar"><!--Links actual navbar to collapseable menu button defined above-->            
+                <ul class="navbar-nav mr-auto"><!--mr-auto margin right auto will push the content to the left as much as possible-->
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a><!--nav-item will list all the list items horizontally--></li>
+                    <li class="nav-item active"><a class="nav-link" href="./aboutus.html">About</a>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a>      
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -32,7 +51,11 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <ol class="col-12 breadcrumb"><!--This ol class and li class below adds a breadcrumb nav-->
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">About Us</a></li>
+            </ol>
+                <div class="col-12">
                <h3>About Us</h3>
                <hr>
             </div>
@@ -71,7 +94,7 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
