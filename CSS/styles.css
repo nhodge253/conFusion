@@ -1,3 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+
+body {
+  background: url('/img/buffet1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white;
+}
+
 .row-header {
     margin: 0px auto;
     padding: 0px auto;
@@ -11,16 +23,22 @@
 }
 
 .footer {
-    background-color: rgb(183, 183, 204);
+    background-color: rgb(42, 41, 44);
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
+    color: salmon;
+    
+}
+
+.footer a {
+    color: floralwhite;
 }
 
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background-color: #9575CD;
-    color: floralwhite;
+    background-color: rgb(42, 41, 44);
+    color: salmon;
 }
 
 .address {
@@ -35,5 +53,32 @@ body {
 }
 
 .navbar-dark {
-    background-color: #512DA8;
+    background-color: goldenrod;
+    
+}
+
+.nav-link {
+    color: salmon;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Vibes', cursive, strong;
+    font-weight: strong;
+}
+
+.card-header {
+    color: floralwhite;
+    background-color: goldenrod;
+}
+
+.card-body {
+    background-color: rgb(42, 41, 44);
+}
+
+th, tr {
+    color: floralwhite;
+}
+
+.btnfeedback, .form-control  {
+    background-color: floralwhite;
 }
