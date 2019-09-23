@@ -82,3 +82,7 @@ th, tr {
 .btnfeedback, .form-control  {
     background-color: floralwhite;
 }
+
+.badge {
+    padding: 5px 5px 0px 5px;
+}

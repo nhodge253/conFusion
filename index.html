@@ -47,10 +47,15 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience.
                      Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <!--img-fluid class below makes an image automatically responsive.  align self-center above positions it-->
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                
+                        <div class="col-12 col-sm-3 d-flex align-items-center">
+                                <a href="#reservation" class="btn btn-warning btn-block btn-sm">Reserve Table</a>     
+                        </div>
+                    
             </div>
         </div>
     </header>
@@ -66,7 +71,7 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
                     <!--media-body creates a div for header below-->
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2><!--Mt-0 margin top zero aligns the header with the description-->
+                        <h2 class="mt-0"><span class="badge badge-danger">HOT</span> Uthappizza <span class="badge badge-pill badge-secondary">$4.99</span></h2><!--Mt-0 margin top zero aligns the header with the description-->
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, 
                         topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                      </div>
@@ -81,15 +86,23 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
+                    <div class="media">
+                            <!--img class below adds a margin to the right of image seperating text-->
+                            
+                            <!--media-body creates a div for header below-->
+                            <div class="media-body">
+                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                 <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads,
                  six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
+                </div>
+                <!--Img is seperated from media-body so it positions correctly-->
+                <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
         </div>
+    </div>
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
+                <h2>Meet our Culinary Specialists</h2>
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
@@ -104,7 +117,71 @@
             </div>
         </div>
     </div>
-
+    <div class="container">
+            <div class="col-12 col-sm-8">   
+                    <div class="card">
+                        <h3 class="card-header">Reserve a Table</h3>
+                        <div class="card-body">
+                                <form id="reservation">
+                                    <div class="form-group row align-items-center">
+                                        <label for="date" class="col-2 col-form-label">Date of Reservation</label>
+                                        <div class="col-10">
+                                            <input class="form-control" type="text"  id="date" placeholder="&#xf274; i.e. 8/12/2019" style="font-family: FontAwesome">
+                                        </div>
+                                      </div>
+                                      <div class="form-group row align-items-center">
+                                            <label for="time" class="col-2 col-form-label">Time of Reservation</label>
+                                            <div class="col-10">
+                                            <input class="form-control" type="text" id="time" placeholder="&#xf017; i.e. 12:30 p.m." style="font-family: FontAwesome">
+                                            </div>
+                                          </div>
+                                      <div class="form-group row">
+                                        <label for="example-datetime-local-input" class="col-2 col-form-label">Number of Guests</label>
+                                        <div class="col">
+                                      <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" id="inlineRadio1" value="option1"> 1
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" id="inlineRadio2" value="option2"> 2
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline disabled">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" id="inlineRadio3" value="option3"> 3
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" id="inlineRadio4" value="option4"> 4
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" id="inlineRadio5" value="option5"> 5
+                                        </label>
+                                      </div>
+                                      <div class="form-check form-check-inline disabled">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" id="inlineRadio6" value="option6"> 6
+                                        </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                            <div class="col-sm-9 offset-sm-3">
+                                                    <button type="submit" class="btn btnfeedback">Reserve Table</button>     
+                                            </div>
+                                  </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+ 
+  
     <footer class="footer">
         <div class="container">
             <div class="row">          
@@ -125,7 +202,7 @@
                       HONG KONG<br>
                       <!--I classes below allow for font awesome icons like earlier in nav bar. I or Span class
                     both work fine.-->
-		              <i class="fa fa-phone fa-lg"></i>>: +852 1234 5678<br>
+		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
 		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
 		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
