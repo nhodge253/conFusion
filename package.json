@@ -6,12 +6,20 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "grunt": "^1.0.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^2.1.0",
+    "jit-grunt": "^0.10.0",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.12.0",
+    "time-grunt": "^1.4.0"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",

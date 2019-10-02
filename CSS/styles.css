@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Vibes&display=swap");
+body {
+  background: url("/img/buffet1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white; }
+
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
@@ -9,27 +18,25 @@
   min-height: 400px; }
 
 .footer {
-  background-color: #D1C4E9;
+  background-color: #2a292c;
   margin: 0px auto;
   padding: 20px 0px; }
 
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #9575CD;
-  color: floralwhite; }
+  background: #2a292c; }
 
 address {
   font-size: 80%;
-  margin: 0px;
-  color: #0f0f0f; }
+  margin: 0px; }
 
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0; }
 
 .navbar-dark {
-  background-color: #512DA8; }
+  background-color: goldenrod; }
 
 .tab-content {
   border-left: 1px solid #ddd;
@@ -38,7 +45,7 @@ body {
   padding: 10px; }
 
 .carousel {
-  background: #512DA8; }
+  background: goldenrod; }
   .carousel .carousel-item {
     height: 300px; }
     .carousel .carousel-item img {
@@ -51,3 +58,85 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px; }
+
+.nav-link {
+  color: #ee5d4d; }
+
+.footer a {
+  color: floralwhite; }
+
+#loginModal {
+  color: black; }
+
+.jumbotron {
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background-color: #2a292c; }
+
+.address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
+.navbar-dark {
+  background-color: goldenrod; }
+
+.nav-link {
+  color: #ee5d4d; }
+
+h1, h2, h3, h4 {
+  font-family: 'Vibes', cursive, strong;
+  font-weight: strong;
+  color: #ee5d4d; }
+
+.card-header {
+  color: floralwhite;
+  background-color: goldenrod; }
+
+.card-body {
+  background-color: #2a292c; }
+
+th, tr {
+  color: floralwhite; }
+
+.btnfeedback, .form-control {
+  background-color: floralwhite; }
+
+.badge {
+  padding: 5px 5px 0px 5px; }
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+.carousel {
+  background: darkkhaki; }
+
+.carousel-item {
+  height: 300px; }
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px; }
+
+.carousel-caption {
+  position: absolute;
+  left: 350px;
+  top: 0px; }
+
+#carousel-button {
+  right: 0px;
+  position: absolute;
+  bottom: 0px; }
+
+.modal-body, .modal-header, .modal-footer {
+  background-color: goldenrod;
+  color: floralwhite; }

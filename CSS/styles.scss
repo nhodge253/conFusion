@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+
+body {
+    background: url('/img/buffet1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: white;
+  }
+
 $lt-gray: #ddd;
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-pale: #D1C4E9;
+$background-dark: goldenrod;
+$background-light:rgb(238, 93, 77);
+$background-pale: rgb(42, 41, 44);
+$text-white: floralwhite;
 
 $carousel-item-height: 300px;
 
@@ -27,14 +39,12 @@ $carousel-item-height: 300px;
 
 .jumbotron {
     @include zero-margin(70px, 30px);
-    background: $background-light;
-    color:floralwhite;
+    background: $background-pale;
 }
 
 address {
     font-size: 80%;
     margin: 0px;
-    color: #0f0f0f;
 }
 
 body {
@@ -73,3 +83,106 @@ body {
     bottom: 0px;
 }
 
+.nav-link {
+    color: $background-light;
+}
+
+.footer a {
+    color: $text-white;
+}
+
+#loginModal {
+    color: black;
+}
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background-color: rgb(42, 41, 44);
+    
+}
+
+.address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: goldenrod;
+    
+}
+
+.nav-link {
+    color: $background-light;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Vibes', cursive, strong;
+    font-weight: strong;
+    color: $background-light;
+}
+
+.card-header {
+    color: $text-white;
+    background-color: $background-dark;
+}
+
+.card-body {
+    background-color: rgb(42, 41, 44);
+}
+
+th, tr {
+    color: $text-white;
+}
+
+.btnfeedback, .form-control  {
+    background-color: $text-white;
+}
+
+.badge {
+    padding: 5px 5px 0px 5px;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.carousel {
+    background: darkkhaki;
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 350px;
+    top: 0px;
+  }
+
+#carousel-button {
+      right: 0px;
+      position: absolute;
+      bottom: 0px;
+  }
+
+.modal-body, .modal-header, .modal-footer {
+    background-color: $background-dark;
+    color: $text-white;
+}
