@@ -54,11 +54,6 @@ body {
       left: 0;
       min-height: 300px; }
 
-#carouselButton {
-  right: 0px;
-  position: absolute;
-  bottom: 0px; }
-
 .nav-link {
   color: #ee5d4d; }
 
@@ -135,8 +130,16 @@ th, tr {
 #carousel-button {
   right: 0px;
   position: absolute;
-  bottom: 0px; }
+  bottom: 0px;
+  z-index: 100;
+  /* bring to front */ }
 
 .modal-body, .modal-header, .modal-footer {
   background-color: goldenrod;
   color: floralwhite; }
+  .modal-body .btn-secondary, .modal-header .btn-secondary, .modal-footer .btn-secondary {
+    background-color: red;
+    color: #2a292c; }
+
+.closeBtn {
+  background-color: floralwhite; }

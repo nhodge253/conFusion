@@ -77,11 +77,6 @@ body {
     }
 }
 
-#carouselButton {
-    right: 0px;
-    position: absolute;
-    bottom: 0px;
-}
 
 .nav-link {
     color: $background-light;
@@ -180,9 +175,18 @@ th, tr {
       right: 0px;
       position: absolute;
       bottom: 0px;
-  }
+      z-index: 100; /* bring to front */
+}
 
 .modal-body, .modal-header, .modal-footer {
     background-color: $background-dark;
     color: $text-white;
+    .btn-secondary {
+        background-color: red;
+        color: $background-pale;
+        
+    }
+}
+.closeBtn  {
+    background-color: $text-white;
 }
